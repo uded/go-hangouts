@@ -12,7 +12,7 @@ func (m *Message) WithText(t string) *Message {
 }
 
 // WithSender adds a User to Message
-func (m *Message) WithSender(u User) *Message {
+func (m *Message) WithSender(u *User) *Message {
 	m.Sender = u
 	return m
 }
